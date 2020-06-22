@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Yatzy Multiplayer</title>
+  <!-- JavaScript jQuerry -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!-- JavaScript jQuerry -->
+  <!-- CSS Styling -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- Google Fonts  -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+
+  <!-- fontawesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- Team members (bootstrap and script)-->
+
+
+
+
+</head>
+
+<body>
+
+  <section id="title">
+
+    <!-- Nav Bar -->
+    <div class="container-fluid" style="background-image: url('images/board.png');">
+
+      <nav class="navigation title-head navbar navbar-expand-lg navbar-dark">
+        <a style="font-size:5vw" class="navbar-brand" href="">Yatzy Games</a>
+        <i class="fa fa-registered fa-2x copyright" aria-hidden="true"></i>
+        <img class="logo navbar-brand yatzy-brand " src="images/yatzy_cover.png" alt="yatzy cover">
+        <!-- Colapsing buttons -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Creators</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Text and buttons -->
+      <nav class="row main-upper-container">
+
+        <div class="col-lg-6 opening-text">
+          <h1>CHALLENGE FRIENDS AND FOES</h1>
+          <h2 class="title-underneath-text">THE #1 MOST POPULAR FREE MOBILE YATZY GAME ON THE MARKET</h>
+
+
+            <!-- Dice container -->
+            <div class="throw-dice-container">
+              <img class="diceButton-six" src="images/dice_six.png" alt="dice image">
+              <img class="diceButton-five" src="images/dice_five.png" alt="dice image">
+              <img class="diceButton-four" src="images/dice_four.png" alt="dice image">
+              <img class="diceButton-three" src="images/dice_three.png" alt="dice image">
+            </div>
+
+            <!-- Throw Dice       -->
+            <div class="throw-dice-button">
+              <button type="button" class="btn btn-outline-success throw-dice-button">Throw Dice</button>
+            </div>
+
+            <!-- Download buttons -->
+            <div class="col-lg-6 download">
+              <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+              <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+            </div>
+        </div>
+
+
+        <!-- Game images - Mobile -->
+        <div class="image-stack col-lg-6 col-md-6 col-sm-6">
+          <div class="image-stack__item create-game">
+            <img class="Phone-create-game" src="images/create-game.png" alt="iphone-mockup">
+          </div>
+
+          <div class="image-stack__item current-game">
+            <img class="Phone-current-game" src="images/current-game.png" alt="iphone-mockup">
+          </div>
+        </div>
+
+        <!-- My Signature -->
+        <div class="Signature">
+          <h4>Created by</h4>
+          <h4>Ali Muhammed</h4>
+        </div>
+
+      </nav>
+    </div>
+  </section>
+
+  <!-- Recommendations -->
+  <section id="recommendation">
+    <h4 class="above-text">IN FOCUS & RECOMMENDATIONS</h4>
+<img  class="dice-heading" src="images/dice_six.png"></img>
+<img  class="dice-heading1" src="images/dice_five.png"></img>
+<img  class="dice-heading2" src="images/dice_four.png"></img>
+<img  class="dice-heading3" src="images/dice_three.png"></img>
+<img  class="dice-heading4" src="images/dice_two.png"></img>
+<img  class="dice-heading5" src="images/dice_one.png"></img>
+
+<!-- TABS SECTION -->
+<section class="tab-section">
+<div class="container">
+             <div class="row">
+               <div class="col-xs-12 ">
+                 <nav>
+                   <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                     <a class="nav-item nav-link active info-right" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                     <a class="nav-item nav-link info-right" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Rules</a>
+                     <a class="nav-item nav-link info-right" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">History</a>
+                     <a class="nav-item nav-link info-right" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">About</a>
+                   </div>
+                 </nav>
+                 <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                     Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                   </div>
+                   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                     Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                   </div>
+                   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                     Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                   </div>
+                   <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                     Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                   </div>
+                 </div>
+
+               </div>
+             </div>
+       </div>
+     </div>
+</div>
+</section>
+<!-- Left of Card -->
+<div class="mb-4">
+                <!-- Solid divider -->
+                <hr class="solid">
+                <div class="text-container">
+                  <a class="Left-container-headings" href="#">GIFT CARDS</a> <br>
+                <a class="left-container-text" href="#">Available now</a> <br><br>
+                <a class="Left-container-headings" href="#">COMPETITIONS</a> <br>
+                <a class="left-container-text" href="#">Tournaments</a> <br>
+                <a class="left-container-text" href="#">Daily Challenges</a> <br>
+                <a class="left-container-text" href="#">Friendly tournaments</a> <br>
+                <a class="left-container-text" href="#">Local competitions</a> <br><br>
+                <a class="Left-container-headings" href="#">MEMBERSHIP</a> <br>
+                <a class="left-container-text" href="#">Bronz member</a> <br>
+                <a class="left-container-text" href="#">Silver member</a> <br>
+                <a class="left-container-text" href="#">Gold member</a> <br> <br>
+                <a class="Left-container-headings" href="#">DLC</a> <br>
+                <a class="left-container-text" href="#">The Yatzy Gold Edition</a> <br>
+                <a class="left-container-text" href="#">The Pink Edition</a> <br>
+                <a class="left-container-text" href="#">The Ultimate Themes Edition</a> <br><br>
+                <a class="Left-container-headings" href="#">NEWS</a> <br>
+                <a class="left-container-text" href="#">Virtual Reality</a> <br>
+                <a class="left-container-text" href="#">Special offers</a> <br>
+                <a class="left-container-text" href="#">Coming soon</a> <br>
+                <a class="left-container-text" href="#">Virtual Reality</a> <br>
+                <a class="left-container-text" href="#">Recommendations</a> <br>
+                <a class="left-container-text" href="#">Newly updated</a> <br><br>
+                <a class="Left-container-headings" href="#">Highscore</a> <br>
+                <a class="left-container-text" href="#">Daily winners</a> <br>
+                <a class="left-container-text" href="#">Tournament winners</a> <br>
+                <a class="left-container-text" href="#">Top 10 winners</a> <br>
+                <a class="left-container-text" href="#">Stats</a> <br>
+                </div>
+            </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+
+          <!-- Card -->
+    <div class="card card-image border border-light" >
+
+
+      <!-- Card image -->
+   <div class="Card-image">
+     <img class="card-img-top border border-light" src="images/board.png" style="height:440px;"  alt="Card image cap">
+     <a href="#!">
+       <div class="mask rgba-white-slight"></div>
+     </a>
+   </div>
+
+
+      <!-- Content -->
+      <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+        <div class="centered">
+          <h5 class="Title-text"> Daily Challenges</h5>
+          <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+            optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+            Odit sed qui, dolorum!.</p>
+          <a class="btn btn-pink"><i class="fas fa-clone left"></i> View project</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- Card -->
+
+        </div>
+
+        <div class="carousel-item">
+
+          <!-- Card -->
+    <div class="card card-image border border-light" >
+
+
+      <!-- Card image -->
+   <div class="Card-image">
+     <img class="card-img-top border border-light" src="images/board.png" style="height:440px;"  alt="Card image cap">
+     <a href="#!">
+       <div class="mask rgba-white-slight"></div>
+     </a>
+   </div>
+
+
+      <!-- Content -->
+      <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+        <div class="centered">
+          <h5 class="Title-text"> Daily Challenges</h5>
+          <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+            optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+            Odit sed qui, dolorum!.</p>
+          <a class="btn btn-pink"><i class="fas fa-clone left"></i> View project</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- Card -->
+
+        </div>
+
+        <div class="carousel-item">
+
+          <!-- Card -->
+    <div class="card card-image border border-light" >
+
+
+      <!-- Card image -->
+   <div class="Card-image">
+     <img class="card-img-top border border-light" src="images/board.png" style="height:440px;"  alt="Card image cap">
+     <a href="#!">
+       <div class="mask rgba-white-slight"></div>
+     </a>
+   </div>
+
+
+      <!-- Content -->
+      <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+        <div class="centered">
+          <h5 class="Title-text"> Daily Challenges</h5>
+          <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+            optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+            Odit sed qui, dolorum!.</p>
+          <a class="btn btn-pink"><i class="fas fa-clone left"></i> View project</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- Card -->
+
+        </div>
+      </div>
+      <!-- controls -->
+
+      <a class="carousel-control-prev"  href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <div class="carousel-control-prev-box">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </div>
+      </a>
+
+
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <div class="carousel-control-next-box">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </div>
+      </a>
+    </div>
+
+    <!-- TEAM SECTION -->
+      <section id="team-section" style="background-color:#192943;">
+   <h3 class="team-heading-text">The Creators of Yatzy Games</h3>
+    <!--Carousel Wrapper-->
+  <div id="multi-team-carousel" class="carousel slide carousel-fade carousel-multi-item" data-ride="carousel">
+
+    <!--Controls-->
+    <div class="controls-top">
+      <a class="btn-floating" href="#multi-team-carousel" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+      <a class="btn-floating" href="#multi-team-carousel" data-slide="next"><i
+          class="fas fa-chevron-right"></i></a>
+    </div>
+    <!--/.Controls-->
+
+    <!--Indicators-->
+    <ol class="carousel-indicators team-indicator">
+      <li data-target="#multi-team-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#multi-team-carousel" data-slide-to="1"></li>
+        <li data-target="#multi-team-carousel" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active ">
+
+        <!-- Person -->
+          <div class="card " style="width: 18rem; height:23rem;">
+            <img class="card-img-top" src="images/person.png" width="200" height="240" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title" style="color:black;">Ali</h4>
+              <p class="card-text">Some example text.</p>
+              <ul class="follow-us">
+                <li class="linkedIn"><a href="https://www.linkedin.com/in/ali-muhammed-105627122/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                <li class"github"><a href="https://github.com/Alawi93"><i class="fab fa-github fa-2x"></i></a></li>
+                <li><a href="https://www.facebook.com/alawi.vetefan"><i class="fab fa-facebook fa-2x"></i></a></li>
+              </ul>
+            </div>
+          </div>
+    <!-- </person -->
+
+
+      </div>
+      <!--/.First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+
+        <!-- Person -->
+          <div class="card" style="width: 18rem; height:23rem;">
+            <img class="card-img-top" src="images/person.png" width="200" height="240" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title"style="color:black;">Jonte</h4>
+              <p class="card-text">Some example text.</p>
+              <ul class="follow-us">
+                <li class="linkedIn"><a href="https://www.linkedin.com/in/ali-muhammed-105627122/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                <li class"github"><a href="https://github.com/Alawi93"><i class="fab fa-github fa-2x"></i></a></li>
+                <li><a href="https://www.facebook.com/alawi.vetefan"><i class="fab fa-facebook fa-2x"></i></a></li>
+              </ul>
+            </div>
+          </div>
+    <!-- </person -->
+      </div>
+      <!--/.Second slide-->
+      <!--third slide-->
+      <div class="carousel-item">
+
+        <!-- Person -->
+          <div class="card" style="width: 18rem; height:23rem;">
+            <img class="card-img-top" src="images/person.png" width="200" height="240" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title" style="color:black;">Adam</h4>
+              <p class="card-text">Some example text.</p>
+              <ul class="follow-us">
+                <li class="linkedIn"><a href="https://www.linkedin.com/in/ali-muhammed-105627122/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                <li class"github"><a href="https://github.com/Alawi93"><i class="fab fa-github fa-2x"></i></a></li>
+                <li><a href="https://www.facebook.com/alawi.vetefan"><i class="fab fa-facebook fa-2x"></i></a></li>
+              </ul>
+            </div>
+          </div>
+    <!-- </person -->
+      </div>
+      <!--/.third slide-->
+    </div>
+    <!--/.Slides-->
+  </div>
+  <!--/.Carousel Wrapper-->
+  </section>
+
+
+
+  <section id="reviews">
+
+    <div id="testimonial-carousel"  class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active testimonial-cards">
+      <h2 class="testimonial-text">It's the best Yatzy game we have ever played!</h2>
+      <img class ="testimonial-image" src="images/man.png" alt="dog-profile">
+      <em>Yatze Critic inc, Stockholm</em><br>
+      <em class="yatze-critic">⭐⭐⭐⭐ 4/5 Stars</em>
+    </div>
+
+    <div class="carousel-item testimonial-cards">
+      <h2 class="testimonial-text">finally i can spend virtual time with my grandssons!</h2>
+      <img class="testimonial-image" src="images/woman.png" alt="lady-profile">
+      <em>Mariga Bergholm , Eslöv</em><br>
+      <em class="yatze-critic">⭐⭐⭐⭐⭐ 5/5 Stars</em>
+  </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+
+  <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+
+  </div>
+  </section>
+
+
+</body>
+
+</html>

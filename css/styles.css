@@ -1,0 +1,550 @@
+/* Navigation container */
+.navigation {
+  background-color: #192943;
+  line-height: 120px;
+  height: 100px;
+  /* Expanding the navigation bar to the left and right edges */
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* Yatzy Image */
+.yatzy-brand {
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  margin: 2% 40%;
+  border-radius: 16px;
+  padding: 1px;
+  background: linear-gradient(to right, #FFC830, #f59038);
+}
+
+/* Contact Pricing Download */
+.nav-list {
+  display: inline-block;
+  font-size: 18px;
+  margin: 20px;
+  vertical-align: bottom;
+  line-height: normal;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Size is put directly on component not here */
+.title-brand {
+  font-size: 5vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat-black';
+  line-height: 1.5;
+  font-size: 3.5rem;
+}
+
+.container-fluid {
+  padding: 0 15%;
+}
+
+#title {
+  background-image: url("images/board.png");
+  color: #fff;
+}
+
+.image-stack {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+  right: -220px;
+}
+
+.main-upper-container {
+  padding: 5% 5%;
+  height: 820px;
+  border-top: 2px solid #FFC830;
+  border-bottom: 4px solid #FFC830;
+}
+
+/* Mobile Image */
+.current-game {
+  grid-column: 4 / -1;
+  grid-row: 1; // make this image be on the same row
+  height: auto;
+  transform: rotate(20deg);
+}
+
+/* Mobile Image */
+.create-game {
+  grid-column: 1 / span 8;
+  grid-row: 1; // must be on the same row as the other image
+  z-index: 1; // make this image render on top of the bottom
+  height: auto;
+  transform: rotate(10deg);
+}
+
+.download {
+  max-width: 400px;
+  margin: 3% -2%;
+  padding: 3% 0;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.title-underneath-text {
+  margin-top: 3%;
+}
+
+.throw-dice-container {
+  padding: 5% 0;
+}
+
+.tryItOut {
+  margin-left: 8%;
+}
+
+.diceButton-six {
+  cursor: pointer;
+  border: none;
+  border-radius: 16px;
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+}
+
+.diceButton-five {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  border-radius: 16px;
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  margin-top: 2%;
+  margin-left: -5%;
+}
+
+.diceButton-four {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  border-radius: 16px;
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-top: 4%;
+}
+
+.diceButton-three {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  border-radius: 16px;
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  margin-top: 2%;
+  margin-left: 9%;
+  margin-top: 6%;
+}
+
+.throw-dice-button {
+  padding: 5% 10%;
+}
+
+/* My Signature */
+.Signature {
+  position: absolute;
+  margin-top: 35%;
+  font-family: 'Sacramento', cursive;
+  top: 18%;
+  right: 3%;
+}
+
+/* .diceButton-six + .diceButton-five + .diceButton-four + .diceButton-three */
+/* Throw dice button, on active the dices should spinn */
+.throw-dice-button:hover {}
+
+.diceButton-six, .diceButton-five, .diceButton-four, .diceButton-three {
+  animation-name: spin;
+  animation-duration: 555ms;
+  animation-iteration-count: 4;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.solid {
+  position: absolute;
+  border-top: 1px solid #66c0f4;
+  width: 10.8%;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+/* Left of Cards area */
+.text-container {
+  position: absolute;
+  top: 108.5%;
+  left: 5%;
+  text-align: justify;
+}
+
+.Left-container-headings {
+  color: #fff;
+}
+
+/* DOES NOT SEAME TO WORK ................................................. */
+.left-container-text {
+  font-family: 'Odibee Sans', cursive;
+  font-weight: normal;
+  font-size: 18px;
+  color: #66c0f4;
+}
+
+/* recomendation Section */
+#recomendation-carousel {
+  text-align: center;
+  background-color: #152d42;
+  color: #fff;
+  height: 300px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.above-text {
+  padding: 2%;
+  position: relative;
+  left: 405px;
+  width: 30%;
+  top: 30px;
+  line-height: 0.2rem;
+  font-family: "Motiva Sans";
+}
+
+/* recomendation Section */
+#recommendation {
+  text-align: center;
+  background-color: #152d42;
+  color: #fff;
+  height: 950px;
+}
+
+/* dice */
+.dice-heading{
+  position: absolute;
+  height:30px;
+  width:30px;
+  left:95px;
+  top:995px;
+}
+
+.dice-heading1{
+  position: absolute;
+  height:30px;
+  width:30px;
+  left:130px;
+  top:995px;
+}
+.dice-heading2{
+  position: absolute;
+  height:30px;
+  width:30px;
+  left:165px;
+  top:995px;
+}
+.dice-heading3{
+  position: absolute;
+  height:30px;
+  width:30px;
+  left:200px;
+  top:995px;
+}
+
+.dice-heading4{
+  position: absolute;
+  height:30px;
+  width:30px;
+  left:235px;
+  top:995px;
+}
+.dice-heading5{
+  position: absolute;
+  height:30px;
+  width:30px;
+  left:270px;
+  top:995px;
+}
+
+/* TAB section ----- -------------------------------------------------------------------------------------------*/
+.tab-section{
+  position: absolute;
+  right:80px;
+  width:350px;
+  bottom: -1100px;
+}
+
+.tab-content{
+
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top:5px solid #66c0f4;
+    border-bottom:5px solid #66c0f4;
+    border-left:5px solid #66c0f4;
+      border-right:5px solid #66c0f4;
+    padding:30px 25px;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    background: #66c0f4;
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
+
+.info-right{
+  color:#fff;
+}
+/* TAB section ----- */
+
+
+
+
+.carouselExampleCaptions {
+  margin-bottom: 5%;
+}
+
+/* Container For the Card */
+.carousel-item {
+  height: 480px;
+}
+
+/* Card (container) */
+.card {
+  margin: 0 auto;
+  /* Added */
+  margin-bottom: 10px;
+  /* Added */
+  height: 440px;
+  width: 900px;
+  text-align: center;
+  margin-bottom: 10%;
+  border-bottom: #fff;
+}
+
+/* Image inside card */
+.Card-image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.Title-text {
+  color: #fff;
+}
+
+/* Text in card */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Left card control */
+.carousel-control-prev {
+  /* background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); */
+  margin-left: 17%;
+}
+
+/* left card control box */
+.carousel-control-prev-box {
+  background: linear-gradient(to right, rgba(171, 218, 244, 0.3) 5%, rgba(171, 218, 244, 0) 95%);
+  height: 100px;
+  width: 100px;
+}
+
+/* right card control */
+.carousel-control-next {
+  margin-right: 17%;
+}
+
+/* right control box */
+.carousel-control-next-box {
+  background: linear-gradient(to left, rgba(171, 218, 244, 0.3) 5%, rgba(171, 218, 244, 0) 95%);
+  height: 100px;
+  width: 100px;
+}
+
+/* Team cards */
+.team-cards {
+  position: absolute;
+  margin-left: 30px;
+  width: 10px;
+  height: 30%;
+}
+
+/* Team test ------------------------------------------------*/
+.follow-us {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 15px;
+  left: -20px;
+}
+
+#multi-team-carousel {
+  position: relative;
+  top: 60px;
+  margin: 0 5%;
+}
+
+#team-section {
+  border-top: 2px solid #66c0f4;
+  border-bottom: 4px solid #66c0f4;
+}
+.team-heading-text{
+  position: relative;
+  top:45px;
+  padding: 2%;
+  line-height: 0.2rem;
+  font-family: "Motiva Sans";
+  font-size:50px;
+}
+.team-indicator{
+  position: static;
+margin-bottom: 80px;
+
+}
+
+/* Team </ */
+
+/* REVIEW SECTION */
+
+.testimonial-cards{
+position: relative;
+margin-left: 5%;
+}
+
+.testimonial-text{
+  margin-top: 30px;
+}
+
+.testimonial-image{
+  width:10%;
+  border-radius:100%;
+  margin:20px;
+}
+
+#reviews{
+  background-color: #152d42;
+  height:540px;
+}
+
+.testimonial-cards{
+  padding: 3% 15%;
+  text-align: center;
+
+}
+
+.yatze-critic{
+  position:absolute;
+  margin-left:-150px;
+}
+
+/* Responsive changes */
+@media (max-width: 1028px) {
+  .main-upper-container {
+    height: 1300px;
+  }
+
+  .title-image, .current-game, .create-game {
+    position: static;
+    transform: rotate(0deg);
+    margin-left: -80%
+  }
+
+  .current-game, .create-game {
+    margin-bottom: 600px;
+  }
+
+  .Signature {
+    margin-top: 60%;
+    position: absolute;
+  }
+
+  /* CAROUSEL  */
+  #carouselExampleCaptions {
+    width: 420px;
+    margin-left: 5%;
+  }
+
+  /* left control */
+  .carousel-control-prev {
+    position: relative;
+    margin-left: -3px;
+  }
+
+  /* right control */
+  .carousel-control-next {
+    position: relative;
+    margin-right: -3px;
+  }
+
+  /* The text inside the card */
+  .centered {
+    position: absolute;
+    left: 25%;
+    font-size: 7px;
+  }
+
+  .above-text {
+    position: relative;
+    font-size: 15px;
+    top: 5px;
+    left: 10px;
+    margin: auto;
+  }
+
+  .yatzy-brand {
+    width: 40%;
+    margin-left: 170px;
+  }
+
+  .copyright {
+    position: absolute;
+    left: 30%;
+  }
+
+  .diceButton-five {
+    margin-left: -50px;
+  }
+
+  .diceButton-four {
+    margin-left: -10px;
+  }
+
+  .diceButton-three {
+    margin-left: 30px;
+  }
+}
